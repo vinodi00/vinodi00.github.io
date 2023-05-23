@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        welcome to my portfolio>>>
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="script" type="text/js" href="script.js">
+</head>
+<body>
+    <!---hero section start-->
+    <div class="hero">
+        <nav>
+            <h2 class="logo"><img src="img/girl.png"></h2>
+            <ul>
+                <li><a href="#1">HOME</a></li>
+                <li><a href="#2">ABOUT</a></li>
+                <li><a href="#3">WORK</a></li>
+                <li><a href="#4">ME</a></li>
+                <li><a href="https://instagram.com/vino.dii_?igshid=OGQ5ZDc2ODk2ZA==">INSTAGRAM</a></li>
+            </ul>
+            <a class="resume-btn" href="./CV.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+        </nav>
+        <div class="content" id="1">
+            <h4>Hello :) my name is </h4>
+            <h1>Vin<span>odi</span></h1>
+            <h3>I'M AN ASPIRING DIGITAL MEDIA CREATER</h3>
+            <div class="newslatter">
+                <form>
+                   <h4>Have a nice day,I love working on Intractive Media and this is my portfolio.  </h4>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--me section start-->
+    <section class="about" id="2"> 
+        <div class="main">
+            <img src="img/girl.jpg">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h5>UI <span>& Designer</span> </h5>
+                <p>I’m an undergraduate 
+                    in information technology at SLIIT.I enjoy creating things that live on the internet.I had lot of 
+                    challenges. With that ,I studied,again and again ,a lot of things.as 
+                    result , I am now on a professional level in web developing front 
+                    and back end as well.I can sing,play instruments and draw cartoons.I am very interested in game development and 3D Aanimation side</p>
+                <a href="tel:+941581892"><button>let's talk</button></a>
+            </div>
+        </div>
+    </section>
+   <!--work section start-->
+    <section class="music" id="3">
+        <div class="container">
+            <div class="content1">
+                <div class="left-col">
+                    <h1>THIS<br>IS<br>MY<br> VOICE</h1>
+                </div>
+                <div class="right-col">
+                    <p>Click Here To Listen</p>
+                    <img src="img/play.png" id="icon">
+                </div>
+            </div>
+        </div>
+        <audio id="mysong">
+            <source src="music/Kaise hua.mp3" type="audio/mp3">
+        </audio>
+<script>
+    var mySong= document.getElementById("mySong");
+    var icon= document.getElementById("icon");
+    icon.onclick= function(){
+        if (mysong.paused) {
+                    mysong.play();
+                    icon.src = "img/pause.png";
+                } else {
+                    mysong.pause();
+                    icon.src = "img/play.png";
+                }
+    }
+</script>
+    </section>
+    <!--ME section-->
+    <section class="me" id="4">
+        <div class="main2">
+            <img src="img/girl2.jpg">
+            <div class="me-text">
+                <h2>ME</h2>
+                <hr>
+                <h3>Skillset</h3><br>
+                <h4>
+                    Fluent in HTML & CSS<br>
+                    Got my fingers around PHP & MySQL<br>
+                    Experience in Full Stack development<br>
+                    Happy on a Mac or PC<br>
+                    created android studio app<br>
+                    MS Office..
+                </h4>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
